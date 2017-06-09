@@ -4,7 +4,6 @@
 #include "Logger.hpp"
 #include <boost/filesystem.hpp>
 
-
 int main()
 {
     Logger* log = new Logger();
@@ -13,5 +12,6 @@ int main()
     log->CheckFiles(1,10);
     log->TrackInit();
     log->LogInit();
+    std::cout << "Test" << std::endl;
     return 0;
 }
